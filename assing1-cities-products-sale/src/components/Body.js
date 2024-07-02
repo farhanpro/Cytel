@@ -10,11 +10,11 @@ const Body = () =>{
             element:<Browse/>
         },
         {
-            path:"/cities",
+            path:"/cities/:cityname",
             element:<Cities/>
         },
         {
-            path:"/products",
+            path:"/products/:productId",
             element:<Products/>
         }
     ]);
