@@ -32,7 +32,17 @@ const Cities =  () => {
         <div>
             <Header />
             <div className="pt-24 px-8">
-                <h1 className="text-2xl font-bold mb-4">{`Browse Products in ${cityname}`}</h1>
+            <div className="flex flex-wrap justify-start items-center mb-4">
+                    <button 
+                    className="bg-blue-700 text-white rounded-lg px-4 py-2 text-xl hover:bg-blue-600 transition duration-300 ease-in-out" 
+                    onClick={() => { navigate('/') }}>
+                    ⬅️ Back
+                    </button>
+                    <h1 className="text-3xl font-extrabold mx-4 text-gray-900">
+                    {`Browse Products in ${cityname}`}
+                    </h1>
+                </div>
+                
                 <div className="overflow-x-auto">
                     <table className="min-w-full bg-white">
                         <thead className="bg-gray-800 text-white">
